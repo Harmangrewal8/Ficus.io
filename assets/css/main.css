@@ -1,17 +1,17 @@
 ::-moz-selection {
-  background: #fa4659;
+  background: #bb0518;
   color: #feffe4;
   /* WebKit/Blink Browsers */
 }
 
 ::selection {
-  background: #fa4659;
+  background: #bb0518;
   color: #feffe4;
   /* WebKit/Blink Browsers */
 }
 
 ::-moz-selection {
-  background: #fa4659;
+  background: #bb0518;
   /* Gecko Browsers */
   color: #feffe4;
 }
@@ -21,6 +21,7 @@ body, html {
   margin: 0;
   font-size: 0.85em;
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -40,7 +41,7 @@ body #overlay {
 }
 
 body #bg {
-  background-color: #2eb872;
+  background-color: #1f7b4c;
   -webkit-clip-path: polygon(100% 22%, 100% 16%, 18% 100%, 61% 100%, 100% 100%);
           clip-path: polygon(100% 22%, 100% 16%, 18% 100%, 61% 100%, 100% 100%);
   width: 100%;
@@ -124,13 +125,13 @@ body #top-text {
 
 body #top-text h1 {
   font-family: 'Merriweather', serif;
-  color: #2eb872;
+  color: #1f7b4c;
   font-size: 2.8rem;
   font-weight: 600px;
 }
 
 body #top-text p {
-  color: #a3de83;
+  color: #33621a;
   font-size: 1.8rem;
   font-weight: 650px;
   margin-bottom: 55px;
@@ -138,8 +139,8 @@ body #top-text p {
 
 body #top-text a {
   padding: 25px 65px;
-  color: #fa4659;
-  border: solid #fa4659 3px;
+  color: #bb0518;
+  border: solid #bb0518 3px;
   text-decoration: none;
   -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
   transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
@@ -160,8 +161,8 @@ body #top-text a span {
 
 body #top-text a:hover {
   color: #feffe4;
-  -webkit-box-shadow: #fa4659 0 80px 0px 2px inset;
-          box-shadow: #fa4659 0 80px 0px 2px inset;
+  -webkit-box-shadow: #bb0518 0 80px 0px 2px inset;
+          box-shadow: #bb0518 0 80px 0px 2px inset;
 }
 
 @media screen and (max-width: 768px) {
@@ -186,12 +187,12 @@ body #top-text a:hover {
   }
   body #top-text h1 {
     font-family: 'Merriweather', serif;
-    color: #2eb872;
+    color: #1f7b4c;
     font-size: 2.8rem;
     font-weight: 600px;
   }
   body #top-text p {
-    color: #a3de83;
+    color: #33621a;
     font-size: 1.8rem;
     font-weight: 650px;
     margin-bottom: 55px;
@@ -199,8 +200,8 @@ body #top-text a:hover {
   body #top-text a {
     margin: 0 auto;
     padding: 20px 60px;
-    color: #fa4659;
-    border: solid #fa4659 3px;
+    color: #bb0518;
+    border: solid #bb0518 3px;
     text-decoration: none;
     -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
     transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
@@ -237,7 +238,7 @@ body #top-text a:hover {
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-  opacity: 0.9;
+  opacity: 0.85;
   position: relative;
   z-index: -2;
 }
@@ -258,7 +259,7 @@ body #top-text a:hover {
 .navbar #logo {
   float: left;
   display: block;
-  color: #2eb872;
+  color: #1f7b4c;
   text-align: center;
   font-size: 2rem;
   padding: 20px 20px;
@@ -271,7 +272,7 @@ body #top-text a:hover {
 .navbar a {
   float: right;
   display: block;
-  color: #2eb872;
+  color: #1f7b4c;
   text-align: center;
   font-size: 1.2rem;
   padding: 25px 20px;
@@ -281,7 +282,7 @@ body #top-text a:hover {
 
 .navbar a:hover {
   font-weight: bolder;
-  color: #fa4659;
+  color: #bb0518;
 }
 
 .navbar .icon {
@@ -289,7 +290,7 @@ body #top-text a:hover {
 }
 
 .solid-nav {
-  background-color: #2eb872;
+  background-color: #1f7b4c;
   -webkit-transition: background-color 700ms ease-in-out 0s;
   transition: background-color 700ms ease-in-out 0s;
 }
@@ -310,7 +311,7 @@ body #top-text a:hover {
 
 @media screen and (max-width: 768px) {
   .navbar {
-    background-color: #2eb872;
+    background-color: #1f7b4c;
   }
   .navbar #logo, .navbar a, .navbar .icon {
     color: #feffe4;
@@ -345,16 +346,16 @@ body #top-text a:hover {
     position: relative;
     padding-left: 30px;
     padding-right: 30px;
-    background-color: #a3de83;
+    background-color: #33621a;
   }
   .navbar.responsive .drop-content a {
-    border-top: 1px solid #2eb872;
+    border-top: 1px solid #1f7b4c;
   }
   .navbar.responsive .dropdown .drop {
     display: block;
     width: 100%;
     text-align: center;
-    border-top: 2px solid #2eb872;
+    border-top: 2px solid #1f7b4c;
   }
 }
 
@@ -365,18 +366,221 @@ body #top-text a:hover {
   width: 100%;
   position: relative;
   z-index: -5;
-  border-bottom: solid #a3de83 2px;
-  background-color: #a3de83;
-}
-
-#about-div {
-  padding-top: 80px;
+  background-color: #feffe4;
 }
 
 #about, #services, #contact {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: 0;
+  padding: 0;
   background-color: #feffe4;
   height: 100%;
+  border-bottom: solid #bb0518 2px;
+}
+
+#services {
+  background-color: #1f7b4c;
+}
+
+.fixed-image-border {
+  -webkit-clip-path: circle(41.4% at 79% 66%);
+          clip-path: circle(41.4% at 79% 66%);
+  background-color: #bb0518;
+}
+
+.fixed-image-border .fixed-image-background {
+  -webkit-clip-path: circle(40.4% at 79% 66%);
+          clip-path: circle(40.4% at 79% 66%);
+  background-color: #feffe4;
+}
+
+.fixed-image-border .fixed-image {
+  -webkit-clip-path: circle(40.4% at 79% 66%);
+          clip-path: circle(40.4% at 79% 66%);
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-image: url("/images/house1.jpg");
+  background-size: cover;
+  opacity: 0.85;
+}
+
+.fixed-image-border .fixed-image3 {
+  -webkit-clip-path: circle(40.4% at 79% 66%);
+          clip-path: circle(40.4% at 79% 66%);
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-image: url("/images/contact.jpg");
+  background-size: cover;
+  opacity: 0.85;
+}
+
+.fixed-image2-border {
+  -webkit-clip-path: circle(41.4% at 23% 59%);
+          clip-path: circle(41.4% at 23% 59%);
+  background-color: #bb0518;
+}
+
+.fixed-image2-border .fixed-image2-background {
+  -webkit-clip-path: circle(40.4% at 23% 59%);
+          clip-path: circle(40.4% at 23% 59%);
+  background-color: #feffe4;
+}
+
+.fixed-image2-border .fixed-image2 {
+  -webkit-clip-path: circle(40.4% at 23% 59%);
+          clip-path: circle(40.4% at 23% 59%);
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-image: url("/images/soil.jpg");
+  background-size: cover;
+  opacity: 0.85;
+}
+
+.text {
+  position: absolute;
+  top: 150px;
+  left: 120px;
+  display: inline-block;
+  max-width: 350px;
+  height: auto;
+  padding: 0 15px;
+  margin: 0 auto;
+  z-index: 15;
+}
+
+.text h1 {
+  font-family: 'Merriweather', serif;
+  color: #1f7b4c;
+  font-size: 2.8rem;
+  font-weight: 600px;
+}
+
+.text p {
+  color: #33621a;
+  font-size: 1.8rem;
+  font-weight: 650px;
+  margin-bottom: 55px;
+}
+
+.text2 {
+  position: absolute;
+  top: 50px;
+  right: 30px;
+  display: inline-block;
+  max-width: 540px;
+  height: auto;
+  padding: 0 15px;
+  margin: 0 auto;
+  z-index: 15;
+}
+
+.text2 h1 {
+  font-family: 'Merriweather', serif;
+  color: #feffe4;
+  font-size: 2.8rem;
+  font-weight: 600px;
+  margin-bottom: 15px;
+}
+
+.text2 p {
+  color: #feffe4;
+  font-size: 1.8rem;
+  font-weight: 550px;
+  margin-bottom: 55px;
+}
+
+.text2 ul li {
+  vertical-align: text-top;
+  list-style: none;
+  color: #feffe4;
+  font-size: 1.5rem;
+  font-weight: 650px;
+  margin-bottom: 16px;
+}
+
+.text2 ul li img {
+  vertical-align: bottom;
+}
+
+.text2 ul li:nth-child(1) {
+  margin-bottom: 3px;
+}
+
+.form {
+  position: absolute;
+  top: 100px;
+  left: 120px;
+  display: inline-block;
+  max-width: 350px;
+  height: auto;
+  padding: 0 15px;
+  margin: 0 auto;
+  z-index: 15;
+}
+
+.form h3 {
+  font-family: 'Merriweather', serif;
+  color: #1f7b4c;
+  font-size: 2.8rem;
+  font-weight: 600px;
+}
+
+.form .form-group input, .form .form-group textarea {
+  min-width: 300px;
+  padding: 15px 25px;
+  margin: 7.5px 0;
+  color: #1f7b4c;
+  font-size: 1.5rem;
+  font-weight: 450px;
+  border: none;
+  border-bottom: solid #33621a 2px;
+  background-color: #f8f9ea;
+}
+
+.form .form-group input ::-webkit-input-placeholder, .form .form-group textarea ::-webkit-input-placeholder {
+  font-size: 1.5rem;
+  font-weight: 450px;
+  color: #bb0518;
+  opacity: 0.8;
+}
+
+.form .form-group input :-ms-input-placeholder, .form .form-group textarea :-ms-input-placeholder {
+  font-size: 1.5rem;
+  font-weight: 450px;
+  color: #bb0518;
+  opacity: 0.8;
+}
+
+.form .form-group input ::-ms-input-placeholder, .form .form-group textarea ::-ms-input-placeholder {
+  font-size: 1.5rem;
+  font-weight: 450px;
+  color: #bb0518;
+  opacity: 0.8;
+}
+
+.form .form-group input ::placeholder, .form .form-group textarea ::placeholder {
+  font-size: 1.5rem;
+  font-weight: 450px;
+  color: #bb0518;
+  opacity: 0.8;
+}
+
+.form .form-group label {
+  color: #33621a;
+  font-size: 1.8rem;
+  font-weight: 650px;
+  margin-bottom: 55px;
+}
+
+.form button {
+  margin: 15px auto;
+  padding: 20px 30px;
+  width: 175px;
+  background: transparent;
+  color: #bb0518;
+  border: solid #bb0518 3px;
+  border-radius: 5%;
 }
 /*# sourceMappingURL=main.css.map */

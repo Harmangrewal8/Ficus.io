@@ -1,8 +1,8 @@
 $colors:(
-    primary: #2eb872,
-    accent: #a3de83,
+    primary: #1f7b4c,
+    accent: #33621a,
     body: #feffe4,
-    contrast:#fa4659
+    contrast:#bb0518
 );
 
 $padding: 15px 15px;
@@ -28,6 +28,7 @@ body, html{
     margin: 0;
     font-size: 0.85em;
     font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
 
 }
 body{
@@ -235,7 +236,7 @@ background-image: url("/images/bg.jpg");
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
-    opacity: 0.9; 
+    opacity: 0.85; 
     position: relative;
     z-index: -2;
       
@@ -384,19 +385,203 @@ background-image: url("/images/bg.jpg");
     width: 100%;
     position: relative;
     z-index: -5;
-    border-bottom: solid color(accent) 2px;
     
-    background-color: color(accent);
+    
+    background-color: color(body);
 }
 
-#about-div{
-    padding-top:80px;
-}
+
+
 #about, #services, #contact{
-    margin-left: 10%;
-    margin-right:10%;
+    margin: 0;
+    padding:0;
     background-color: color(body);
     height: 100%;
+    border-bottom: solid color(contrast) 2px;
     
 }
 
+#services{
+    background-color: color(primary);
+}
+
+
+
+.fixed-image-border{
+    clip-path: circle(41.4% at 79% 66%);
+    background-color: color(contrast);
+    .fixed-image-background{
+        clip-path: circle(40.4% at 79% 66%);
+        background-color: color(body);
+    }
+    .fixed-image{
+        clip-path: circle(40.4% at 79% 66%);
+        height: 100vh;
+        width:100%;
+        background-attachment: fixed;
+        background-image: url("/images/house1.jpg");
+        background-size: cover;
+        opacity: 0.85;
+        
+    }
+    .fixed-image3{
+        clip-path: circle(40.4% at 79% 66%);
+        height: 100vh;
+        width:100%;
+        background-attachment: fixed;
+        background-image: url("/images/contact.jpg");
+        background-size: cover;
+        opacity: 0.85;
+        
+    }
+}
+
+
+.fixed-image2-border{
+    clip-path: circle(41.4% at 23% 59%);
+    background-color: color(contrast);
+    .fixed-image2-background{
+        clip-path: circle(40.4% at 23% 59%);
+        background-color: color(body);
+    }
+    .fixed-image2{
+        clip-path: circle(40.4% at 23% 59%);
+        height: 100vh;
+        width:100%;
+        background-attachment: fixed;
+        background-image: url("/images/soil.jpg");
+        background-size: cover;
+        opacity: 0.85;
+        
+    }
+}
+
+.text{
+    position: absolute;
+    top: 150px;
+    left:120px;
+    display: inline-block;
+    max-width: 350px; 
+    height: auto;  
+    padding: 0 15px;
+    margin: 0 auto;
+    z-index: 15;
+    h1{
+        font-family: 'Merriweather', serif;
+        color: color(primary);
+        font-size: 2.8rem;
+        font-weight: 600px;
+
+    }
+    p{
+        color: color(accent);
+        font-size: 1.8rem;
+        font-weight: 650px;
+        margin-bottom: 55px;
+
+    }
+}
+
+.text2{
+    position: absolute;
+    top: 50px;
+    right:30px;
+    display: inline-block;
+    max-width: 540px; 
+    height: auto;  
+    padding: 0 15px;
+    margin: 0 auto;
+    z-index: 15;
+    h1{
+        font-family: 'Merriweather', serif;
+        color: color(body);
+        font-size: 2.8rem;
+        font-weight: 600px;
+        margin-bottom: 15px;
+
+    }
+    p{
+        color: color(body);
+        font-size: 1.8rem;
+        font-weight: 550px;
+        margin-bottom: 55px;
+
+    }
+    ul{
+        
+        li{
+            img{
+                vertical-align: bottom;
+                
+                
+            }
+            
+            vertical-align: text-top;
+            list-style: none;
+            color: color(body);
+        font-size: 1.5rem;
+        font-weight: 650px;
+        margin-bottom: 16px;
+        }
+        li:nth-child(1){
+            margin-bottom: 3px;
+        }
+    }
+}
+
+//form
+.form{
+    position: absolute;
+    top: 100px;
+    left:120px;
+    display: inline-block;
+    max-width: 350px; 
+    height: auto;  
+    padding: 0 15px;
+    margin: 0 auto;
+    z-index: 15;
+    h3{
+        font-family: 'Merriweather', serif;
+        color: color(primary);
+        font-size: 2.8rem;
+        font-weight: 600px;
+    }
+    .form-group{
+        input,textarea{
+            min-width:300px ;
+padding: 15px 25px;
+margin: 7.5px 0;
+color: color(primary);
+font-size: 1.5rem;
+font-weight: 450px;
+border: none;
+border-bottom: solid color(accent) 2px;
+background-color: #f8f9ea;
+::placeholder{
+    font-size: 1.5rem;
+font-weight: 450px;
+color: color(contrast);
+opacity: 0.8;
+}
+        }
+        label{
+            color: color(accent);
+            font-size: 1.8rem;
+            font-weight: 650px;
+            margin-bottom: 55px;
+        }
+        textarea{
+
+        }
+        
+    }
+    button{
+        margin: 15px auto;
+        padding: 20px 30px;
+        width:175px;
+        background: transparent;
+        color: color(contrast);
+            border: solid color(contrast) 3px;
+            border-radius: 5%;
+    }
+}

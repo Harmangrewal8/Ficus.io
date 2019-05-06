@@ -1,6 +1,6 @@
 
 $(document).ready(function () {
-    displayMenu();
+    
     $(window).scroll(function () {
       solidnav();
   
