@@ -47,10 +47,11 @@ z-index: -10;
 }
         #bg{
           
-            background-color: color(primary);
-            clip-path: polygon(100% 22%, 100% 16%, 18% 100%, 61% 100%, 100% 100%);  
+            background-image: linear-gradient(to left bottom, #1f7b4c, #669a68, #9dbb8b, #feffe4);            
             width: 100%;
             height: 100%;
+            clip-path: polygon(100% 22%, 100% 16%, 18% 100%, 61% 100%, 100% 100%);  
+            opacity: 0.95;
             position: absolute;
             z-index: -1;
             #arrow{
@@ -93,13 +94,28 @@ z-index: -10;
             }
 
         }
-        
+
+        @keyframes yourAnimation{
+            0%{
+                transform: translateY(-50px);
+                opacity: 0;
+                }
+            100%{
+                transform: rotate(xx) translateY(0);
+                opacity: 1;
+                }
+        }
+
         #top-text{
             position: absolute;
             top: 200px;
             left:120px;
             display: inline-block;
             max-width: 750px;
+
+        
+                animation: yourAnimation 1s forwards 0s ease;
+            
             h1{
                 font-family: 'Merriweather', serif;
                 color: color(primary);
@@ -152,9 +168,11 @@ z-index: -10;
         @media screen and (max-width: 768px) {
             #bg{
                 clip-path: polygon(100% 72%, 12% 100%, 100% 100%); 
+                background-color: red;
+                opacity: 1;
                 #arrow{
                 position: absolute;
-                bottom: 100px;
+                bottom: 55px;
                 right: 40px;
                                     
 
@@ -173,13 +191,13 @@ z-index: -10;
             h1{
                 font-family: 'Merriweather', serif;
                 color: color(primary);
-                font-size: 2.8rem;
+                font-size: 2.4rem;
                 font-weight: 600px;
 
             }
             p{
                 color: color(accent);
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 font-weight: 650px;
                 margin-bottom: 55px;
 
@@ -415,20 +433,23 @@ background-image: url("/images/bg.jpg");
         background-color: color(body);
     }
     .fixed-image{
+        opacity: 0.95;
         clip-path: circle(40.4% at 79% 66%);
         height: 100vh;
         width:100%;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-image: url("/images/house1.jpg");
         background-size: cover;
         opacity: 0.85;
         
     }
     .fixed-image3{
+        opacity: 0.95;
+
         clip-path: circle(40.4% at 79% 66%);
         height: 100vh;
         width:100%;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-image: url("/images/contact.jpg");
         background-size: cover;
         opacity: 0.85;
@@ -445,14 +466,65 @@ background-image: url("/images/bg.jpg");
         background-color: color(body);
     }
     .fixed-image2{
+        opacity: 0.95;
         clip-path: circle(40.4% at 23% 59%);
         height: 100vh;
         width:100%;
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-image: url("/images/soil.jpg");
         background-size: cover;
         opacity: 0.85;
         
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .fixed-image-border{
+clip-path: ellipse(95% 29% at 32% 12%);
+        background-color: color(contrast);
+        .fixed-image-background{
+    clip-path: ellipse(95% 29% at 32% 12%);
+            background-color: color(body);
+        }
+        .fixed-image{
+    clip-path: ellipse(95% 29% at 32% 12%);
+            height: 80vh;
+            width:100%;
+            background-attachment: local;
+            background-image: url("/images/house1.jpg");
+            background-size: 150%;
+            opacity: 0.85;
+            
+        }
+        .fixed-image3{
+    clip-path: ellipse(95% 29% at 32% 12%);
+            height: 100vh;
+            width:100%;
+            background-attachment: scroll;
+            background-image: url("/images/contact.jpg");
+            background-size: 150%;
+            opacity: 0.85;
+            
+        }
+    }
+    .fixed-image2-border{
+clip-path: ellipse(95% 29% at 32% 12%);
+        background-color: color(contrast);
+        .fixed-image2-background{
+    clip-path: ellipse(95% 29% at 32% 12%);
+            background-color: color(body);
+        }
+        .fixed-image2{
+    clip-path: ellipse(95% 29% at 32% 12%);
+            height: 100vh;
+            width:100%;
+            background-attachment: scroll;
+            background-image: url("/images/soil.jpg");
+            background-size: 150%;
+            opacity: 0.85;
+            
+        }
     }
 }
 
@@ -529,22 +601,118 @@ background-image: url("/images/bg.jpg");
     }
 }
 
+
+
+@media screen and (max-width: 768px) {
+    #services-div{
+        height: 130vh;
+        
+    }
+    .text{
+        position: absolute;
+        top: 300px;
+        left:0px;
+        display: inline-block;
+        max-width: 350px; 
+        height: auto;  
+        padding: 0 15px;
+        margin: 0 auto;
+        z-index: 15;
+        h1{
+            font-family: 'Merriweather', serif;
+            color: color(primary);
+            font-size: 2.2rem;
+            font-weight: 600px;
+    
+        }
+        p{
+            color: color(accent);
+            font-size: 1.4rem;
+            font-weight: 650px;
+            margin-bottom: 55px;
+    
+        }
+    }
+    
+    .text2{
+        position: absolute;
+        top: 300px;
+        right:0;
+        display: inline-block;
+        max-width: 540px; 
+        height: auto;  
+        
+        margin: 0 auto;
+        z-index: 15;
+        h1{
+            padding: 0 15px;
+            font-family: 'Merriweather', serif;
+            color: color(body);
+            font-size: 2.2rem;
+            font-weight: 600px;
+            margin-bottom: 15px;
+    
+        }
+        p{
+
+            color: color(body);
+            font-size: 1.4rem;
+            font-weight: 550px;
+            margin-bottom: 15px;
+    
+        }
+        ul{
+            padding: 0;
+                            list-style: square inside url("/images/check.png");
+
+            li{
+                img{
+                    vertical-align: bottom;
+                   
+                    
+                    
+                }
+                
+                vertical-align: text-top;
+                list-style: none;
+                color: color(body);
+            font-size: 1.5rem;
+            font-weight: 650px;
+            margin-bottom: 16px;
+            }
+            li:nth-child(1){
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
 //form
 .form{
     position: absolute;
-    top: 100px;
-    left:120px;
+    top: 300px;
+    left:0;
     display: inline-block;
-    max-width: 350px; 
-    height: auto;  
+    max-width: auto; 
+    height: 120;  
     padding: 0 15px;
     margin: 0 auto;
     z-index: 15;
     h3{
         font-family: 'Merriweather', serif;
         color: color(primary);
-        font-size: 2.8rem;
+        font-size: 2.2rem;
         font-weight: 600px;
+        margin-bottom: 25px;
+    }
+    p{
+        color: color(accent);
+        font-size: 1.4rem;
+        font-weight: 650px;
+        margin-bottom: 15px;
+        strong{
+            color: color(contrast);
+        }
+
     }
     .form-group{
         input,textarea{
@@ -570,18 +738,40 @@ opacity: 0.8;
             font-weight: 650px;
             margin-bottom: 55px;
         }
+        
         textarea{
-
+            height: 80px;;
+            ::placeholder{
+                font-size: 1.5rem;
+            font-weight: 450px;
+            color: color(contrast);
+            opacity: 0.8;
         }
         
     }
-    button{
-        margin: 15px auto;
-        padding: 20px 30px;
-        width:175px;
-        background: transparent;
-        color: color(contrast);
-            border: solid color(contrast) 3px;
-            border-radius: 5%;
-    }
+    
+}
+input[type=submit] {
+    
+    margin: 15px auto 15px auto;
+    
+    padding: 15px 35px;
+    width:175px;
+    background: transparent;
+    color: color(contrast);
+        border: solid color(contrast) 3px;
+        border-radius: 5%;
+        font-size: 1.8rem;
+            font-weight: 650px;
+            -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+                transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+}
+
+input[type=submit]:hover{
+    color: color(body);            
+	box-shadow: color(contrast) 0 80px 0px 2px inset;
+}
 }
