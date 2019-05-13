@@ -31,7 +31,7 @@ body {
 }
 
 body #overlay {
-  background-image: url("//ficus.io/images/bg.jpg");
+  background-image: url("/Ficus.io/images/bg.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -279,7 +279,7 @@ body #top-text a:hover {
 }
 
 .img-section {
-  background-image: url("/images/bg.jpg");
+  background-image: url("/Ficus.io/images/bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -458,7 +458,7 @@ body #top-text a:hover {
   height: 100vh;
   width: 100%;
   background-attachment: scroll;
-  background-image: url("/images/house1.jpg");
+  background-image: url("/Ficus.io/images/house1.jpg");
   background-size: cover;
   opacity: 0.85;
 }
@@ -470,7 +470,7 @@ body #top-text a:hover {
   height: 100vh;
   width: 100%;
   background-attachment: scroll;
-  background-image: url("/images/contact.jpg");
+  background-image: url("/Ficus.io/images/contact.jpg");
   background-size: cover;
   opacity: 0.85;
 }
@@ -494,7 +494,7 @@ body #top-text a:hover {
   height: 100vh;
   width: 100%;
   background-attachment: scroll;
-  background-image: url("/images/soil.jpg");
+  background-image: url("/Ficus.io/images/soil.jpg");
   background-size: cover;
   opacity: 0.85;
 }
@@ -516,7 +516,7 @@ body #top-text a:hover {
     height: 80vh;
     width: 100%;
     background-attachment: local;
-    background-image: url("/images/house1.jpg");
+    background-image: url("/Ficus.io/images/house1.jpg");
     background-size: 150%;
     opacity: 0.85;
   }
@@ -526,7 +526,7 @@ body #top-text a:hover {
     height: 100vh;
     width: 100%;
     background-attachment: scroll;
-    background-image: url("/images/contact.jpg");
+    background-image: url("/Ficus.io/images/contact.jpg");
     background-size: 150%;
     opacity: 0.85;
   }
@@ -546,7 +546,7 @@ body #top-text a:hover {
     height: 100vh;
     width: 100%;
     background-attachment: scroll;
-    background-image: url("/images/soil.jpg");
+    background-image: url("/Ficus.io/images/soil.jpg");
     background-size: 150%;
     opacity: 0.85;
   }
@@ -675,7 +675,7 @@ body #top-text a:hover {
   }
   .text2 ul {
     padding: 0;
-    list-style: square inside url("/images/check.png");
+    list-style: square inside url("/Ficus.io/images/check.png");
   }
   .text2 ul li {
     vertical-align: text-top;
