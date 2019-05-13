@@ -438,7 +438,7 @@ background-image: url("/Ficus.io/images/bg.jpg");
     padding:0;
     background-color: color(body);
     height: 100%;
-    border-bottom: solid color(contrast) 2px;
+    
     
 }
 
@@ -628,8 +628,11 @@ clip-path: ellipse(95% 29% at 32% 12%);
 
 @media screen and (max-width: 768px) {
     #services-div{
-        height: 130vh;
+        height: 150vh;
         
+    }
+    #contact-div{
+        height: 130vh;
     }
     .text{
         position: absolute;
@@ -701,7 +704,7 @@ clip-path: ellipse(95% 29% at 32% 12%);
                 color: color(body);
             font-size: 1.5rem;
             font-weight: 650px;
-            margin-bottom: 16px;
+            margin-bottom: 20px;
             }
             li:nth-child(1){
                 margin-bottom: 16px;
@@ -889,4 +892,33 @@ input[type=submit]:hover{
     }
     }
       
+}
+
+#footer{
+    position: relative;
+    bottom: 0;
+
+    margin: 0;
+    background-color: color(primary);
+    
+    width: 100%;
+    h3{
+        color: color(body);
+        font-size: 1.4rem;
+        font-weight: 300;
+        text-align: center;
+        padding: 20px;
+
+    }
+    
+@media screen and (max-width: 768px) {
+    h3{
+        color: color(body);
+        font-size: 1.1rem;
+        font-weight: 300;
+        text-align: center;
+        padding: 20px;
+
+    } 
+}
 }
