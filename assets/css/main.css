@@ -31,7 +31,7 @@ body {
 }
 
 body #overlay {
-  background-image: url("/images/bg.jpg");
+  background-image: url("https://github.com/Harmangrewal8/Ficus.io/blob/master/images/bg.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,13 +40,25 @@ body #overlay {
   opacity: 0.1;
 }
 
+body #bg-bg {
+  background: -webkit-gradient(linear, left top, right top, from(#bb0518), color-stop(35%, #bb0518), to(white));
+  background: linear-gradient(90deg, #bb0518 0%, #bb0518 35%, white 100%);
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(100% 21.5%, 17.5% 100%, 61% 100%, 100% 100%);
+          clip-path: polygon(100% 21.5%, 17.5% 100%, 61% 100%, 100% 100%);
+  opacity: 0.95;
+  position: absolute;
+  z-index: -1;
+}
+
 body #bg {
   background-image: -webkit-gradient(linear, right top, left bottom, from(#1f7b4c), color-stop(#669a68), color-stop(#9dbb8b), to(#feffe4));
   background-image: linear-gradient(to left bottom, #1f7b4c, #669a68, #9dbb8b, #feffe4);
   width: 100%;
   height: 100%;
-  -webkit-clip-path: polygon(100% 22%, 100% 16%, 18% 100%, 61% 100%, 100% 100%);
-          clip-path: polygon(100% 22%, 100% 16%, 18% 100%, 61% 100%, 100% 100%);
+  -webkit-clip-path: polygon(100% 22%, 18% 100%, 61% 100%, 100% 100%);
+          clip-path: polygon(100% 22%, 18% 100%, 61% 100%, 100% 100%);
   opacity: 0.95;
   position: absolute;
   z-index: -1;
@@ -58,7 +70,17 @@ body #bg #arrow {
   right: 100px;
 }
 
+body #bg #arrow p {
+  margin: 10px auto;
+  color: white;
+  opacity: 0.8;
+  font-size: 1.4rem;
+  font-weight: 800;
+  left: -5px;
+}
+
 body #bg #arrow .scroll-arrow {
+  margin: 0 auto;
   width: 15px;
   height: 15px;
   -webkit-transform: rotate(45deg);
@@ -196,6 +218,10 @@ body #top-text a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  body #bg-bg {
+    -webkit-clip-path: polygon(100% 72%, 12% 100%, 100% 100%);
+            clip-path: polygon(100% 72%, 12% 100%, 100% 100%);
+  }
   body #bg {
     -webkit-clip-path: polygon(100% 72%, 12% 100%, 100% 100%);
             clip-path: polygon(100% 72%, 12% 100%, 100% 100%);
@@ -490,7 +516,7 @@ body #top-text a:hover {
     height: 80vh;
     width: 100%;
     background-attachment: local;
-    background-image: url("/images/house1.jpg");
+    background-image: url("https://github.com/Harmangrewal8/Ficus.io/blob/master/images/house1.jpg");
     background-size: 150%;
     opacity: 0.85;
   }
@@ -500,7 +526,7 @@ body #top-text a:hover {
     height: 100vh;
     width: 100%;
     background-attachment: scroll;
-    background-image: url("/images/contact.jpg");
+    background-image: url("https://github.com/Harmangrewal8/Ficus.io/blob/master/images/contact.jpg");
     background-size: 150%;
     opacity: 0.85;
   }
@@ -520,7 +546,7 @@ body #top-text a:hover {
     height: 100vh;
     width: 100%;
     background-attachment: scroll;
-    background-image: url("/images/soil.jpg");
+    background-image: url("https://github.com/Harmangrewal8/Ficus.io/blob/master/images/soil.jpg");
     background-size: 150%;
     opacity: 0.85;
   }
@@ -649,7 +675,7 @@ body #top-text a:hover {
   }
   .text2 ul {
     padding: 0;
-    list-style: square inside url("/images/check.png");
+    list-style: square inside url("https://github.com/Harmangrewal8/Ficus.io/blob/master/images/check.png");
   }
   .text2 ul li {
     vertical-align: text-top;
@@ -669,8 +695,8 @@ body #top-text a:hover {
 
 .form {
   position: absolute;
-  top: 300px;
-  left: 0;
+  top: 60px;
+  left: 120px;
   display: inline-block;
   max-width: auto;
   height: 120;
@@ -682,14 +708,14 @@ body #top-text a:hover {
 .form h3 {
   font-family: 'Merriweather', serif;
   color: #1f7b4c;
-  font-size: 2.2rem;
+  font-size: 2.8rem;
   font-weight: 600px;
   margin-bottom: 25px;
 }
 
 .form p {
   color: #33621a;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 650px;
   margin-bottom: 15px;
 }
@@ -746,7 +772,7 @@ body #top-text a:hover {
 }
 
 .form .form-group textarea {
-  height: 80px;
+  height: 55px;
 }
 
 .form .form-group textarea ::-webkit-input-placeholder {
@@ -795,5 +821,121 @@ body #top-text a:hover {
   color: #feffe4;
   -webkit-box-shadow: #bb0518 0 80px 0px 2px inset;
           box-shadow: #bb0518 0 80px 0px 2px inset;
+}
+
+@media screen and (max-width: 768px) {
+  .form {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    display: inline-block;
+    max-width: auto;
+    height: 120;
+    padding: 0 15px;
+    margin: 0 auto;
+    z-index: 15;
+  }
+  .form h3 {
+    font-family: 'Merriweather', serif;
+    color: #1f7b4c;
+    font-size: 2.2rem;
+    font-weight: 600px;
+    margin-bottom: 25px;
+  }
+  .form p {
+    color: #33621a;
+    font-size: 1.4rem;
+    font-weight: 650px;
+    margin-bottom: 15px;
+  }
+  .form p strong {
+    color: #bb0518;
+  }
+  .form .form-group input, .form .form-group textarea {
+    min-width: 300px;
+    padding: 15px 25px;
+    margin: 7.5px 0;
+    color: #1f7b4c;
+    font-size: 1.5rem;
+    font-weight: 450px;
+    border: none;
+    border-bottom: solid #33621a 2px;
+    background-color: #f8f9ea;
+  }
+  .form .form-group input ::-webkit-input-placeholder, .form .form-group textarea ::-webkit-input-placeholder {
+    font-size: 1.5rem;
+    font-weight: 450px;
+    color: #bb0518;
+    opacity: 0.8;
+  }
+  .form .form-group input :-ms-input-placeholder, .form .form-group textarea :-ms-input-placeholder {
+    font-size: 1.5rem;
+    font-weight: 450px;
+    color: #bb0518;
+    opacity: 0.8;
+  }
+  .form .form-group input ::-ms-input-placeholder, .form .form-group textarea ::-ms-input-placeholder {
+    font-size: 1.5rem;
+    font-weight: 450px;
+    color: #bb0518;
+    opacity: 0.8;
+  }
+  .form .form-group input ::placeholder, .form .form-group textarea ::placeholder {
+    font-size: 1.5rem;
+    font-weight: 450px;
+    color: #bb0518;
+    opacity: 0.8;
+  }
+  .form .form-group label {
+    color: #33621a;
+    font-size: 1.8rem;
+    font-weight: 650px;
+    margin-bottom: 55px;
+  }
+  .form .form-group textarea {
+    height: 80px;
+  }
+  .form .form-group textarea ::-webkit-input-placeholder {
+    font-size: 1.5rem;
+    font-weight: 450px;
+    color: #bb0518;
+    opacity: 0.8;
+  }
+  .form .form-group textarea :-ms-input-placeholder {
+    font-size: 1.5rem;
+    font-weight: 450px;
+    color: #bb0518;
+    opacity: 0.8;
+  }
+  .form .form-group textarea ::-ms-input-placeholder {
+    font-size: 1.5rem;
+    font-weight: 450px;
+    color: #bb0518;
+    opacity: 0.8;
+  }
+  .form .form-group textarea ::placeholder {
+    font-size: 1.5rem;
+    font-weight: 450px;
+    color: #bb0518;
+    opacity: 0.8;
+  }
+  .form input[type=submit] {
+    margin: 15px auto 15px auto;
+    padding: 15px 35px;
+    width: 175px;
+    background: transparent;
+    color: #bb0518;
+    border: solid #bb0518 3px;
+    border-radius: 5%;
+    font-size: 1.8rem;
+    font-weight: 650px;
+    -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  }
+  .form input[type=submit]:hover {
+    color: #feffe4;
+    -webkit-box-shadow: #bb0518 0 80px 0px 2px inset;
+            box-shadow: #bb0518 0 80px 0px 2px inset;
+  }
 }
 /*# sourceMappingURL=main.css.map */
