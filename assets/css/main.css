@@ -59,7 +59,7 @@ body #bg {
   height: 100%;
   -webkit-clip-path: polygon(100% 22%, 18% 100%, 61% 100%, 100% 100%);
           clip-path: polygon(100% 22%, 18% 100%, 61% 100%, 100% 100%);
-  opacity: 0.95;
+  opacity: 0.93;
   position: absolute;
   z-index: -1;
 }
@@ -225,13 +225,17 @@ body #top-text a:hover {
   body #bg {
     -webkit-clip-path: polygon(100% 72%, 12% 100%, 100% 100%);
             clip-path: polygon(100% 72%, 12% 100%, 100% 100%);
-    background-color: red;
+    background-image: none;
+    background-color: #1f7b4c;
     opacity: 1;
   }
   body #bg #arrow {
     position: absolute;
-    bottom: 55px;
+    bottom: 25px;
     right: 40px;
+  }
+  body #bg #arrow p {
+    display: none;
   }
   body #top-text {
     position: absolute;
