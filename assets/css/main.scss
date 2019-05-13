@@ -37,7 +37,7 @@ background-color: color(body);
 position: relative;
 z-index: -10;
 #overlay{
-    background-image: url("https://github.com/Harmangrewal8/Ficus.io/blob/master/images/bg.jpg");
+    background-image: url("//ficus.io/images/bg.jpg");
     background-attachment: fixed;
     background-size:cover;
     background-repeat: no-repeat;
@@ -515,7 +515,7 @@ clip-path: ellipse(95% 29% at 32% 12%);
             height: 80vh;
             width:100%;
             background-attachment: local;
-            background-image: url("https://github.com/Harmangrewal8/Ficus.io/blob/master/images/house1.jpg");
+            background-image: url("/images/house1.jpg");
             background-size: 150%;
             opacity: 0.85;
             
@@ -525,7 +525,7 @@ clip-path: ellipse(95% 29% at 32% 12%);
             height: 100vh;
             width:100%;
             background-attachment: scroll;
-            background-image: url("https://github.com/Harmangrewal8/Ficus.io/blob/master/images/contact.jpg");
+            background-image: url("/images/contact.jpg");
             background-size: 150%;
             opacity: 0.85;
             
@@ -543,7 +543,7 @@ clip-path: ellipse(95% 29% at 32% 12%);
             height: 100vh;
             width:100%;
             background-attachment: scroll;
-            background-image: url("https://github.com/Harmangrewal8/Ficus.io/blob/master/images/soil.jpg");
+            background-image: url("/images/soil.jpg");
             background-size: 150%;
             opacity: 0.85;
             
@@ -686,7 +686,7 @@ clip-path: ellipse(95% 29% at 32% 12%);
         }
         ul{
             padding: 0;
-                            list-style: square inside url("https://github.com/Harmangrewal8/Ficus.io/blob/master/images/check.png");
+                            list-style: square inside url("/images/check.png");
 
             li{
                 img{
