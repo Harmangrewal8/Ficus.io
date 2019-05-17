@@ -282,6 +282,26 @@ body #top-text a:hover {
   }
 }
 
+#locations-div {
+  color: rgba(187, 5, 24, 0.7);
+  font-size: 2.5rem;
+  font-weight: 2000;
+  display: block;
+  position: absolute;
+  top: 130px;
+  right: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+#locations-div h1 {
+  text-align: right;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  max-width: 550px;
+}
+
 .img-section {
   background-image: url("/Ficus.io/images/bg.jpg");
   background-size: cover;
@@ -315,7 +335,10 @@ body #top-text a:hover {
 }
 
 .trans-nav {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 34%, 0 16%);
+          clip-path: polygon(0 0, 100% 0%, 100% 34%, 0 16%);
   background-color: transparent;
+  border-bottom: solid #bb0518 2px;
 }
 
 .navbar #logo {
@@ -504,18 +527,18 @@ body #top-text a:hover {
 
 @media screen and (max-width: 768px) {
   .fixed-image-border {
-    -webkit-clip-path: ellipse(95% 29% at 32% 12%);
-            clip-path: ellipse(95% 29% at 32% 12%);
+    -webkit-clip-path: ellipse(88% 36% at 24% 17%);
+            clip-path: ellipse(88% 36% at 24% 17%);
     background-color: #bb0518;
   }
   .fixed-image-border .fixed-image-background {
-    -webkit-clip-path: ellipse(95% 29% at 32% 12%);
-            clip-path: ellipse(95% 29% at 32% 12%);
+    -webkit-clip-path: ellipse(88% 36% at 24% 17%);
+            clip-path: ellipse(88% 36% at 24% 17%);
     background-color: #feffe4;
   }
   .fixed-image-border .fixed-image {
-    -webkit-clip-path: ellipse(95% 29% at 32% 12%);
-            clip-path: ellipse(95% 29% at 32% 12%);
+    -webkit-clip-path: ellipse(88% 36% at 24% 17%);
+            clip-path: ellipse(88% 36% at 24% 17%);
     height: 80vh;
     width: 100%;
     background-attachment: local;
@@ -524,8 +547,8 @@ body #top-text a:hover {
     opacity: 0.85;
   }
   .fixed-image-border .fixed-image3 {
-    -webkit-clip-path: ellipse(95% 29% at 32% 12%);
-            clip-path: ellipse(95% 29% at 32% 12%);
+    -webkit-clip-path: ellipse(88% 36% at 24% 17%);
+            clip-path: ellipse(88% 36% at 24% 17%);
     height: 100vh;
     width: 100%;
     background-attachment: scroll;
@@ -534,18 +557,18 @@ body #top-text a:hover {
     opacity: 0.85;
   }
   .fixed-image2-border {
-    -webkit-clip-path: ellipse(95% 29% at 32% 12%);
-            clip-path: ellipse(95% 29% at 32% 12%);
+    -webkit-clip-path: ellipse(88% 36% at 24% 17%);
+            clip-path: ellipse(88% 36% at 24% 17%);
     background-color: #bb0518;
   }
   .fixed-image2-border .fixed-image2-background {
-    -webkit-clip-path: ellipse(95% 29% at 32% 12%);
-            clip-path: ellipse(95% 29% at 32% 12%);
+    -webkit-clip-path: ellipse(88% 36% at 24% 17%);
+            clip-path: ellipse(88% 36% at 24% 17%);
     background-color: #feffe4;
   }
   .fixed-image2-border .fixed-image2 {
-    -webkit-clip-path: ellipse(95% 29% at 32% 12%);
-            clip-path: ellipse(95% 29% at 32% 12%);
+    -webkit-clip-path: ellipse(88% 36% at 24% 17%);
+            clip-path: ellipse(88% 36% at 24% 17%);
     height: 100vh;
     width: 100%;
     background-attachment: scroll;

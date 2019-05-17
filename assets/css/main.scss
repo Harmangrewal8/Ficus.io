@@ -62,9 +62,11 @@ z-index: -10;
             opacity: 0.93;
             position: absolute;
             z-index: -1;
+
+           
             #arrow{
 
-                position: absolute;;
+                position: absolute;
                 bottom: 90px;
                 right: 100px;
                 p{
@@ -261,6 +263,30 @@ z-index: -10;
         }
 }
 
+#locations-div{
+    color: rgba(187,5,24,0.7);
+    font-size: 2.5rem;
+    font-weight: 2000;
+    display: block;
+    position: absolute;
+    top: 130px;
+    right:30px;
+    margin: 0;
+    padding: 0;
+
+    
+    h1{
+        
+        text-align: right;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        max-width: 550px;
+    
+    }
+    
+
+}
 //img overlay top
 .img-section {
 background-image: url("/Ficus.io/images/bg.jpg");
@@ -299,8 +325,9 @@ background-image: url("/Ficus.io/images/bg.jpg");
 }
 
 .trans-nav{
+    clip-path: polygon(0 0, 100% 0%, 100% 34%, 0 16%);
 	background-color: transparent;
-
+border-bottom: solid #bb0518 2px;
 }
 
 
@@ -508,14 +535,14 @@ background-image: url("/Ficus.io/images/bg.jpg");
 
 @media screen and (max-width: 768px) {
     .fixed-image-border{
-clip-path: ellipse(95% 29% at 32% 12%);
+clip-path: ellipse(88% 36% at 24% 17%);
         background-color: color(contrast);
         .fixed-image-background{
-    clip-path: ellipse(95% 29% at 32% 12%);
+    clip-path: ellipse(88% 36% at 24% 17%);
             background-color: color(body);
         }
         .fixed-image{
-    clip-path: ellipse(95% 29% at 32% 12%);
+    clip-path: ellipse(88% 36% at 24% 17%);
             height: 80vh;
             width:100%;
             background-attachment: local;
@@ -525,7 +552,7 @@ clip-path: ellipse(95% 29% at 32% 12%);
             
         }
         .fixed-image3{
-    clip-path: ellipse(95% 29% at 32% 12%);
+    clip-path: ellipse(88% 36% at 24% 17%);
             height: 100vh;
             width:100%;
             background-attachment: scroll;
@@ -536,14 +563,14 @@ clip-path: ellipse(95% 29% at 32% 12%);
         }
     }
     .fixed-image2-border{
-clip-path: ellipse(95% 29% at 32% 12%);
+clip-path: ellipse(88% 36% at 24% 17%);
         background-color: color(contrast);
         .fixed-image2-background{
-    clip-path: ellipse(95% 29% at 32% 12%);
+    clip-path: ellipse(88% 36% at 24% 17%);
             background-color: color(body);
         }
         .fixed-image2{
-    clip-path: ellipse(95% 29% at 32% 12%);
+    clip-path: ellipse(88% 36% at 24% 17%);
             height: 100vh;
             width:100%;
             background-attachment: scroll;
