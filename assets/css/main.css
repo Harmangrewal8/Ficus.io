@@ -19,6 +19,7 @@
 body, html {
   height: 100%;
   margin: 0;
+  padding: 0;
   font-size: 0.85em;
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
@@ -302,6 +303,12 @@ body #top-text a:hover {
   max-width: 550px;
 }
 
+@media screen and (max-width: 768px) {
+  #locations-div {
+    display: none;
+  }
+}
+
 .img-section {
   background-image: url("/Ficus.io/images/bg.jpg");
   background-size: cover;
@@ -335,10 +342,7 @@ body #top-text a:hover {
 }
 
 .trans-nav {
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 34%, 0 16%);
-          clip-path: polygon(0 0, 100% 0%, 100% 34%, 0 16%);
   background-color: transparent;
-  border-bottom: solid #bb0518 2px;
 }
 
 .navbar #logo {
@@ -642,10 +646,6 @@ body #top-text a:hover {
 
 .text2 ul li img {
   vertical-align: bottom;
-}
-
-.text2 ul li:nth-child(1) {
-  margin-bottom: 3px;
 }
 
 @media screen and (max-width: 768px) {
