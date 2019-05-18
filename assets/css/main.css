@@ -20,7 +20,6 @@ body, html {
   height: 100%;
   margin: 0;
   max-width: 100%;
-  overflow-x: hidden;
   font-size: 0.85em;
   font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
